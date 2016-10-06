@@ -1,7 +1,5 @@
 (function(root, factory) {
-  if (typeof define === 'function' && define.amd) {
-    define(['schemaForm'], factory);
-  } else if (typeof exports === 'object') {
+  if (typeof exports === 'object') {
     module.exports = factory(require('schemaForm'));
   } else {
     root.bootstrapDecorator = factory(root.schemaForm);
